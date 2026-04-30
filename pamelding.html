@@ -17,28 +17,29 @@
             <li><a href="oss.html">Om oss</a></li>
         </ul>
     </nav>
-    <main>
-        <div id="dark_box">
-            <div id="text_in_box">
-                <h1>Gruppe turer starter fra 8. mai!!</h1>
-                <img src="cycle_img/img/markusspiske-road-bike-594164.jpg" alt="Close up photo of bicykles wheel">
-            </div>
-        </div>
+    <div id="blue_box">
+        <div id="text_in_box">
+            <h1>Meld seg på gruppe tur</h1>
 
-        <div id="green_box">
-            <div id="text_in_box">
-                <h2>Er du klar til sommer?</h2>
-                <p>Ta med sykkelen din til oss for service på onsdag 6. mai, og få muligheten til å møte potensielle
-                    reisefølge til sommerens turer!</p>
-                <img src="cycle_img/img/pexels-bicycle-1850008_1920.jpg" alt="Photo of CYCLE bicycle repair zone">
-            </div>
-            <div id="adress_box">
-                <img src="cycle_img/website_sprites/kart_pointer.png" alt="A map pointer icon">
-                <a href="https://maps.app.goo.gl/Ez6T5cEtyL6GwKm4A">Høgskoleringen 1, 7034 Trondheim</a>
-            </div>
+            <label for="Name">Navn:</label>
+            <input type="text" id="Name" name="Name" required>
+
+            <label for="Surname">Etternavn:</label>
+            <input type="text" id="Surname" name="Surname" required>
+
+            <label for="DOB">Fødselsdato:</label>
+            <input type="date" id="DOB" name="DOB" required>
+
+            <label for="Tlf">Telefonnummer:</label>
+            <input type="number" id="Tlf" name="Tlf" required>
+
+            <label for="Terms">Jeg godtar at min personlig informasjon skal brukes av CYCLE AS og jeg vil få SMS med
+                bekreftelse og detaljer om turen</label>
+            <input type="checkbox" id="Terms" name="Terms" required>
+
+            <button onclick="submitForm()">Send inn</button>
         </div>
-        </div>
-    </main>
+    </div>
     <script src="script.js"></script>
 </body>
 <footer>
