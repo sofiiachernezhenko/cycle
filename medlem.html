@@ -1,75 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CYCLE</title>
-    <link rel="stylesheet" href="design.css">
-</head>
+    <link rel="stylesheet" href="design.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <img src="cycle_img/website_sprites/qlogo.png" alt="Logo for CYCLE">
-        <ul id="menu">
-            <li><a href="tur.html">Gruppe tur</a></li>
-            <li><a href="medlem.html">Bli medlem</a></li>
-            <li><a href="oss.html">Om oss</a></li>
-        </ul>
+      <img src="cycle_img/website_sprites/qlogo.png" alt="Logo for CYCLE" />
+      <ul class="menu">
+        <li><a href="tur.html">Gruppe tur</a></li>
+        <li><a href="medlem.html">Bli medlem</a></li>
+        <li><a href="oss.html">Om oss</a></li>
+      </ul>
     </nav>
     <main>
-        <div id="dark_box">
-            <div id="text_in_box">
-                <h1>Medlemskap hos oss:</h1>
-                <p>Pris: 100 kr/mnd<br>Hva du får:</p>
-                <ul>
-                    <li>gratis reparering av sykkel</li>
-                    <li>gratis kaffe og kanelbolle på våres kontoret </li>
-                    <li>mulighet for å bestemme neste tur ruter</li>
-                </ul>
-            </div>
+      <div class="dark_box">
+        <div id="text_in_box">
+          <h1>Medlemskap hos oss:</h1>
+          <p>Pris: 100 kr/mnd<br />Hva du får:</p>
+          <ul>
+            <li>gratis reparering av sykkel</li>
+            <li>gratis kaffe og kanelbolle på våres kontoret</li>
+            <li>mulighet for å bestemme neste tur ruter</li>
+          </ul>
         </div>
+      </div>
 
-        <div id="blue_box">
-            <div id="text_in_box">
-                <label for="Name">Navn:</label>
-                <input type="text" id="Name" name="Name" required>
+      <div class="blue_box">
+        <div id="text_in_box">
+          <h2>Bli medlem</h2>
+          <label for="Name">Navn:</label>
+          <input type="text" placeholder="Ola" id="Name" name="Name" required />
 
-                <label for="Surname">Etternavn:</label>
-                <input type="text" id="Surname" name="Surname" required>
+          <label for="Surname">Etternavn:</label>
+          <input
+            type="text"
+            placeholder="Olsen"
+            id="Surname"
+            name="Surname"
+            required
+          />
 
-                <label for="DOB">Fødselsdato:</label>
-                <input type="date" id="DOB" name="DOB" required>
+          <label for="DOB">Fødselsdato:</label>
+          <input type="date" id="DOB" name="DOB" required />
 
-                <label for="Tlf">Telefonnummer:</label>
-                <input type="number" id="Tlf" name="Tlf" required>
+          <label for="Tlf">Telefonnummer:</label>
+          <input
+            type="tel"
+            placeholder="+47 944 45 547"
+            id="Tlf"
+            name="Tlf"
+            required
+          />
 
-                <label for="Terms">Jeg godtar at min personlig informasjon skal brukes av CYCLE AS og forstår at
-                    betaling skal trekkes første dag hver måned og det kan stoppes når som helst, men jeg kjønner at jeg
-                    for ikke tilbake de pengene jeg allerede betalt.</label>
-                <input type="checkbox" id="Terms" name="Terms" required>
-
-                <button onclick="submitForm()">Send inn</button>
-            </div>
+          <label for="Terms"
+            >Jeg godtar at min personlig informasjon skal brukes av CYCLE AS og
+            forstår at betaling skal trekkes første dag hver måned og det kan
+            stoppes når som helst, men jeg kjønner at jeg for ikke tilbake de
+            pengene jeg allerede betalt.</label
+          >
+          <input type="checkbox" id="Terms" name="Terms" required />
+          <div id="button_box">
+            <button onclick="submitForm()">Send inn</button>
+          </div>
         </div>
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
-<footer>
-    <div class="footer">
-        <div id="logo_description">
-            <img src="cycle_img/website_sprites/qlogo.png" alt="logo of CYCLE">
-            <p>
-                Vi skapet møte sted til alle hvor du kan vare sosialt og kreativt til fordel for naturen.
-            </p>
-        </div>
-        <div id="contact_info">
-            <h3>Kontakt oss</h3>
-            <p>+47 944 45 947<br>cycle.post@bedrift.no</p>
-            <img src="cycle_img/website_sprites/facebooklogo.png" alt="Facebook logo">
-            <img src="cycle_img/website_sprites/instlogo.png" alt="Instagram logo">
-        </div>
+  </body>
+  <footer>
+    <div id="logo_description">
+      <img src="cycle_img/website_sprites/qlogo.png" alt="logo of CYCLE" />
+      <p>
+        Vi skapet møte sted til alle hvor du kan vare sosialt og kreativt til
+        fordel for naturen.
+      </p>
     </div>
-</footer>
-
+    <div id="contact_info">
+      <h3>Kontakt oss</h3>
+      <p>+47 944 45 947<br />cycle.post@bedrift.no</p>
+      <div id="SoMe_box">
+        <a href="#">
+          <img
+            src="cycle_img/website_sprites/facebooklogo.png"
+            alt="Facebook logo"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="cycle_img/website_sprites/instlogo.png"
+            alt="Instagram logo"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
 </html>

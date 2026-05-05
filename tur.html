@@ -1,76 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CYCLE</title>
-    <link rel="stylesheet" href="design.css">
-</head>
+    <link rel="stylesheet" href="design.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <img src="cycle_img/website_sprites/qlogo.png" alt="Logo for CYCLE">
-        <ul id="menu">
-            <li><a href="tur.html">Gruppe tur</a></li>
-            <li><a href="medlem.html">Bli medlem</a></li>
-            <li><a href="oss.html">Om oss</a></li>
-        </ul>
+      <img src="cycle_img/website_sprites/qlogo.png" alt="Logo for CYCLE" />
+      <ul class="menu">
+        <li><a href="tur.html">Gruppe tur</a></li>
+        <li><a href="medlem.html">Bli medlem</a></li>
+        <li><a href="oss.html">Om oss</a></li>
+      </ul>
     </nav>
     <main>
-        <div id="blue_box">
-            <div id="text_in_box">
-                <h1>Åpning av tur sesong fredag 8. mai</h1>
-                <p>1,5 time tur til fossen, grilling og fint atmosfære!<br>Oppmøte kl. 17</p>
-                <img src="cycle_img/img/adriankirby-seljalandsfoss-1207958.jpg" alt="Photo of waterfall">
-            </div>
+      <div id="outer_box">
+        <div class="blue_box">
+          <img
+            src="cycle_img/img/adriankirby-seljalandsfoss-1207958.jpg"
+            alt="Photo of waterfall"
+          />
+          <div id="text_in_box">
+            <h1>Åpning av tur sesong fredag 8. mai</h1>
+            <p>
+              1,5 time tur til fossen, grilling og fint atmosfære!<br />Oppmøte
+              kl. 17
+            </p>
+
             <div id="adress_box">
-                <img src="cycle_img/website_sprites/kart_pointer.png" alt="A map pointer icon">
-                <a href="https://maps.app.goo.gl/dtPykEVx7UoLQANL7">Sjøgangen 2, 7010 Trondheim</a>
+              <img
+                src="cycle_img/website_sprites/kart_pointer.png"
+                alt="A map pointer icon"
+              />
+              <a href="https://maps.app.goo.gl/dtPykEVx7UoLQANL7"
+                >Sjøgangen 2, 7010 Trondheim</a
+              >
             </div>
-            <button id="reg" href="pamelding.html">Påmelding</button>
+            <button id="reg" onclick="window.location.href = 'pamelding.html'">
+              Påmelding
+            </button>
+          </div>
         </div>
 
-        <div id="green_box">
-            <div id="text_in_box">
-                <h2>Lang kysttur tirsdag 12. mai</h2>
-                <p>2,5 timer tur ved kysten av våre kjære Trøndelag, ta med seg mat, vann og godt humør!<br>Oppmøte kl.
-                    15.30</p>
-                <img src="cycle_img/img/jpoujol-bike-2641375.jpg" alt="Photo of two bikes by the sea">
-            </div>
-            <div id="adress_box">
-                <img src="cycle_img/website_sprites/kart_pointer.png" alt="A map pointer icon">
-                <a href="https://maps.app.goo.gl/TbZLfqHXktZzCAom6">Ladestien, 7040 Trondheim</a>
-            </div>
-            <button id="reg" href="pamelding.html">Påmelding</button>
-        </div>
+        <div class="green_box">
+          <div id="text_in_box">
+            <h2>Lang kysttur tirsdag 12. mai</h2>
+            <p>
+              2,5 timer tur ved kysten av våre kjære Trøndelag, ta med seg mat,
+              vann og godt humør!<br />Oppmøte kl. 15.30
+            </p>
 
-        <div id="dark_box">
-            <h3>Viktig info:</h3>
-            <p>Denne året skal vi arrangere 70 turer!</p>
-            <img src="cycle_img/img/pexels-bicycle-1834265.jpg" alt="Bike on the road in forest">
-            <h4>Tips til tur:</h4>
-            <p>Ikke glem solkrem og myggspray. Ha en fin tur!</p>
-            <img src="cycle_img/img/chezbeate-sunscreen-1461335.jpg" alt="sunscreen">
+            <div id="adress_box">
+              <img
+                src="cycle_img/website_sprites/kart_pointer.png"
+                alt="A map pointer icon"
+              />
+              <a href="https://maps.app.goo.gl/TbZLfqHXktZzCAom6"
+                >Ladestien, 7040 Trondheim</a
+              >
+            </div>
+            <button id="reg" onclick="window.location.href = 'pamelding.html'">
+              Påmelding
+            </button>
+          </div>
+          <img
+            src="cycle_img/img/jpoujol-bike-2641375.jpg"
+            alt="Photo of two bikes by the sea"
+          />
         </div>
+      </div>
+      <div class="dark_box">
+        <h3>Viktig info:</h3>
+        <p>Denne året skal vi arrangere 70 turer!</p>
+        <img
+          src="cycle_img/img/pexels-bicycle-1834265.jpg"
+          alt="Bike on the road in forest"
+        />
+        <h4>Tips til tur:</h4>
+        <p>Ikke glem solkrem og myggspray. Ha en fin tur!</p>
+        <img
+          src="cycle_img/img/chezbeate-sunscreen-1461335.jpg"
+          alt="sunscreen"
+        />
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
-<footer>
-    <div class="footer">
-        <div id="logo_description">
-            <img src="cycle_img/website_sprites/qlogo.png" alt="logo of CYCLE">
-            <p>
-                Vi skapet møte sted til alle hvor du kan vare sosialt og kreativt til fordel for naturen.
-            </p>
-        </div>
-        <div id="contact_info">
-            <h3>Kontakt oss</h3>
-            <p>+47 944 45 947<br>cycle.post@bedrift.no</p>
-            <img src="cycle_img/website_sprites/facebooklogo.png" alt="Facebook logo">
-            <img src="cycle_img/website_sprites/instlogo.png" alt="Instagram logo">
-        </div>
+  </body>
+  <footer>
+    <div id="logo_description">
+      <img src="cycle_img/website_sprites/qlogo.png" alt="logo of CYCLE" />
+      <p>
+        Vi skapet møte sted til alle hvor du kan vare sosialt og kreativt til
+        fordel for naturen.
+      </p>
     </div>
-</footer>
-
+    <div id="contact_info">
+      <h3>Kontakt oss</h3>
+      <p>+47 944 45 947<br />cycle.post@bedrift.no</p>
+      <div id="SoMe_box">
+        <a href="#">
+          <img
+            src="cycle_img/website_sprites/facebooklogo.png"
+            alt="Facebook logo"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="cycle_img/website_sprites/instlogo.png"
+            alt="Instagram logo"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
 </html>
