@@ -8,19 +8,19 @@ body {
 main {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #index_page main {
   display: flex;
-  gap: 10rem;
 }
 
 #oss main {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-#index_page img {
+#index_page_img img {
   border-radius: 2rem;
   width: 20rem;
   height: 20rem;
@@ -394,4 +394,72 @@ input[type="checkbox"] {
   width: 10rem;
   height: 10rem;
   border-radius: 0%;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+
+  nav img {
+    width: 15rem;
+    height: 5rem;
+    margin-left: 1rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  #index_page main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .green_box {
+    margin: 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .dark_box {
+    margin: 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .blue_box {
+    margin: 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .blue_box img,
+  .green_box img,
+  .dark_box img {
+    width: 100%;
+  }
+
+  #contact_info {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-wrap: wrap;
+    padding-left: 0rem;
+  }
+
+  #logo_description {
+    width: 100%;
+    margin-left: 1rem;
+  }
 }
