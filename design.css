@@ -492,11 +492,6 @@ input[type="checkbox"] {
     margin-top: 1rem;
   }
 
-  #index_page main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .green_box {
     width: 80%;
     display: flex;
@@ -541,6 +536,12 @@ input[type="checkbox"] {
     display: none;
   }
 
+  #adress_box {
+    display: flex;
+    flex-wrap: wrap;
+    display: contents;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -564,7 +565,7 @@ input[type="checkbox"] {
 
   #text_in_box {
     width: fit-content;
-    display: flex;
+    display: contents;
     flex-direction: column;
   }
 
@@ -598,10 +599,14 @@ input[type="checkbox"] {
   .green_box h1 {
     font-size: 2rem;
     margin-bottom: 0rem;
+    margin-right: 0rem;
   }
 
   .green_box p {
     font-size: 1.5rem;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .green_box img {
