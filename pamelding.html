@@ -11,12 +11,19 @@
     <nav>
       <img src="cycle_img/website_sprites/qlogo.png" alt="Logo for CYCLE" />
       <ul class="menu">
-        <li><a href="tur.html">Gruppe tur</a></li>
+        <li><a href="tur.html">Gruppetur</a></li>
         <li><a href="medlem.html">Bli medlem</a></li>
         <li><a href="oss.html">Om oss</a></li>
       </ul>
+      <a href="burger_menu.html" id="burger_meny">
+        <img
+          src="cycle_img/website_sprites/burger_menu.png"
+          alt="Button to open menu"
+          id="burger_meny"
+        />
+      </a>
     </nav>
-    <div class="blue_box">
+    <div class="green_box">
       <div id="text_in_box">
         <h1>Meld seg på gruppe tur</h1>
 
@@ -43,12 +50,13 @@
           name="Tlf"
           required
         />
-
-        <label for="Terms"
-          >Jeg godtar at min personlig informasjon skal brukes av CYCLE AS og
-          jeg vil få SMS med bekreftelse og detaljer om turen</label
-        >
-        <input type="checkbox" id="Terms" name="Terms" required />
+        <div id="checkbox">
+          <input type="checkbox" id="Terms" name="Terms" required />
+          <label for="Terms"
+            >Jeg godtar at min personlige informasjon skal brukes av CYCLE AS og
+            jeg vil få SMS med bekreftelse og detaljer om turen</label
+          >
+        </div>
 
         <button onclick="submitForm()">Send inn</button>
       </div>

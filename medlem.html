@@ -11,10 +11,17 @@
     <nav>
       <img src="cycle_img/website_sprites/qlogo.png" alt="Logo for CYCLE" />
       <ul class="menu">
-        <li><a href="tur.html">Gruppe tur</a></li>
+        <li><a href="tur.html">Gruppetur</a></li>
         <li><a href="medlem.html">Bli medlem</a></li>
         <li><a href="oss.html">Om oss</a></li>
       </ul>
+      <a href="burger_menu.html" id="burger_meny">
+        <img
+          src="cycle_img/website_sprites/burger_menu.png"
+          alt="Button to open menu"
+          id="burger_meny"
+        />
+      </a>
     </nav>
     <main>
       <div class="dark_box">
@@ -55,15 +62,16 @@
             name="Tlf"
             required
           />
-
-          <label for="Terms"
-            >Jeg godtar at min personlig informasjon skal brukes av CYCLE AS og
-            forstår at betaling skal trekkes første dag hver måned og det kan
-            stoppes når som helst, men jeg kjønner at jeg for ikke tilbake de
-            pengene jeg allerede betalt.</label
-          >
-          <input type="checkbox" id="Terms" name="Terms" required />
-          <div id="button_box">
+          <div id="checkbox">
+            <input type="checkbox" id="Terms" name="Terms" required />
+            <label for="Terms"
+              >Jeg godtar at min personlige informasjon skal brukes av CYCLE AS
+              og forstår at betaling skal trekkes første dag hver måned.
+              Betaling kan stoppes når som helst, men jeg skjønner at jeg ikke
+              får refundert de pengene som var forhånds betalt.</label
+            >
+          </div>
+          <div class="box_button">
             <button onclick="submitForm()">Send inn</button>
           </div>
         </div>

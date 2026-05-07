@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #f2f0d8;
-  background-image: url("cycle_img/website_sprites/bg_v2.png");
+  background-image: url("cycle_img/website_sprites/background.png");
   background-size: cover;
 }
 
@@ -20,12 +20,6 @@ main {
   flex-wrap: wrap;
 }
 
-#index_page_img img {
-  border-radius: 2rem;
-  width: 20rem;
-  height: 20rem;
-}
-
 /*dark box parameters lower*/
 
 .dark_box h1 {
@@ -38,6 +32,13 @@ main {
 }
 
 .dark_box img {
+  border-radius: 2rem;
+  width: 20rem;
+  height: 15rem;
+  margin-top: 1rem;
+}
+
+.dark_box #index_page_img img {
   border-radius: 2rem;
   width: 20rem;
   height: 15rem;
@@ -100,6 +101,10 @@ nav img {
   margin-top: 1rem;
 }
 
+nav #burger_meny {
+  display: none;
+}
+
 .menu a {
   color: #ffffff;
   text-decoration: none;
@@ -145,6 +150,12 @@ nav img {
   width: 16rem;
   height: 20rem;
   margin-top: 4rem;
+}
+
+.green_box #couple {
+  width: 25rem !important;
+  height: 20rem;
+  margin-top: 1rem;
 }
 
 .green_box {
@@ -303,6 +314,17 @@ footer p {
   margin-bottom: 0;
 }
 
+.blue_box h1 {
+  color: #f2f0d8;
+  font-family: "dunbar-tall", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-right: 2rem;
+  margin-bottom: 0;
+}
+
 .blue_box p {
   color: #ffffff;
   font-family: "corbel", sans-serif;
@@ -329,15 +351,14 @@ button {
   border-radius: 2rem;
   border-color: #f2f0d8;
   width: 12rem;
-  height: 2rem;
+  height: 3rem;
   margin-top: 2rem;
 }
 
-#button_box {
+.box_button {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 2rem;
 }
 
 /*input parameters*/
@@ -359,6 +380,13 @@ label[for="Terms"] {
   font-weight: 900;
   font-style: normal;
   font-size: 1rem;
+  opacity: 0.8;
+}
+
+#checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 input[type="text"],
@@ -402,13 +430,22 @@ input[type="checkbox"] {
   }
 
   nav img {
-    width: 15rem;
-    height: 5rem;
+    width: 12rem;
+    height: 4rem;
     margin-left: 1rem;
   }
 
   nav {
-    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  nav #burger_meny {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
   }
 
   #index_page main {
@@ -417,27 +454,31 @@ input[type="checkbox"] {
   }
 
   .green_box {
-    margin: 1rem;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 1rem;
   }
 
   .dark_box {
-    margin: 1rem;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 1rem;
+  }
+
+  .dark_box ul {
+    font-size: 1.5rem;
   }
 
   .blue_box {
-    margin: 1rem;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 1rem;
   }
 
   .blue_box img,
@@ -459,7 +500,122 @@ input[type="checkbox"] {
   }
 
   #logo_description {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 12rem;
     margin-left: 1rem;
+  }
+
+  #logo_description img {
+    width: 10rem;
+    height: 3.5rem;
+  }
+
+  #text_in_box {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"] {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 1rem;
+  }
+
+  .blue_box img {
+    margin: 0;
+  }
+
+  .blue_box ul {
+    font-size: 1.5rem;
+  }
+
+  .blue_box h1,
+  .blue_box h2 {
+    font-size: 2rem;
+    margin-right: 0rem;
+  }
+
+  .blue_box p {
+    font-size: 1.5rem;
+  }
+
+  .green_box h2,
+  .green_box h1 {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .green_box p {
+    font-size: 1.5rem;
+  }
+
+  .green_box img {
+    margin: 0;
+  }
+
+  #menu_page {
+    background-color: #030759;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+
+  .burger ul {
+    list-style-type: none;
+    align-items: center;
+  }
+
+  .burger li {
+    list-style-type: none;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .burger a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "corbel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+  .dark_box h1 {
+    font-size: 2rem;
+  }
+
+  .dark_box p {
+    font-size: 1.5rem;
+  }
+
+  #box_barekraft img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0%;
+    margin-top: 1rem;
+  }
+
+  #box_barekraft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .green_box #couple {
+    width: 20rem !important;
+    height: auto;
+    margin-top: 1rem;
   }
 }
